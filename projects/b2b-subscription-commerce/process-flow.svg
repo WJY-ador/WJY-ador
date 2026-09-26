@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1336 504" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b2b-process-flow-title b2b-process-flow-desc">
+      <title id="b2b-process-flow-title">B2B 구독 커머스 영업·계약·상담 프로세스 흐름</title>
+      <desc id="b2b-process-flow-desc">영업이 영업기회와 견적을 진행하고, 전자서명이 끝나면 Salesforce 계약 상태가 바뀌며, 서비스·매출은 정본인 고객사 ERP에서 CRM이 받아 오기만 하고, 서비스 이용 중 고객 문의는 AI Service Agent가 먼저 응대한 뒤 상담원에게 이관·검수로 넘어가며 상담원은 AI 분류 추천을 골라 확정하고 필요하면 Slack Swarming으로 영업과 함께 처리하는 흐름.</desc>
+      <defs>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');</style>
+        <marker id="b2b-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6B7075"/></marker>
+        <marker id="b2b-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C63D2F"/></marker>
+        <marker id="b2b-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#3D5A66"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#FAFAF7"/>
+      <rect x="40" y="40" width="1256" height="384" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="40" y="232" width="1256" height="96" fill="rgba(28,30,33,0.035)"/>
+      <line x1="40" y1="136" x2="1296" y2="136" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="40" y1="232" x2="1296" y2="232" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="40" y1="328" x2="1296" y2="328" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="144" y1="40" x2="144" y2="424" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <text x="56" y="92" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">영업</text>
+      <text x="56" y="188" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">외부 시스템</text>
+      <text x="56" y="284" fill="#1C1E21" font-size="12" font-weight="600" font-family="'IBM Plex Mono', ui-monospace, monospace" letter-spacing="0.04em">SALESFORCE</text>
+      <text x="56" y="380" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">고객·상담</text>
+      <path d="M 320,88 H 352" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 512,88 H 616 Q 624,88 624,96 V 156" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 624,212 V 252" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 704,280 H 736" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 816,212 V 252" fill="none" stroke="#C63D2F" stroke-width="1.6" marker-end="url(#b2b-arrow-accent)"/>
+      <path d="M 816,308 V 348" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 896,376 H 904 Q 912,376 912,368 V 288 Q 912,280 920,280 H 928" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 1008,308 V 348" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 1088,364 H 1096 Q 1104,364 1104,356 V 96 Q 1104,88 1112,88 H 1120" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <path d="M 1088,388 H 1192 Q 1200,388 1200,380 V 308" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#b2b-arrow)"/>
+      <rect x="828" y="224" width="88" height="16" rx="2" fill="#FAFAF7"/>
+      <text class="lb" x="872" y="236" fill="#C63D2F" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">CRM은 수신만</text>
+      <rect x="696" y="320" width="108" height="16" rx="2" fill="#FAFAF7"/>
+      <text class="lb" x="750" y="332" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">서비스 이용 중</text>
+      <rect x="1020" y="320" width="72" height="16" rx="2" fill="#FAFAF7"/>
+      <text class="lb" x="1056" y="332" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">이관·검수</text>
+      <rect x="1212" y="332" width="72" height="16" rx="2" fill="#FAFAF7"/>
+      <text class="lb" x="1248" y="344" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">추천 요청</text>
+      <rect x="160" y="60" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="160" y="60" width="160" height="56" rx="6" fill="rgba(107,112,117,0.10)" stroke="#8E9398" stroke-width="1"/>
+      <text class="nm" x="240" y="86" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">영업기회</text>
+      <text class="sb" x="240" y="105" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">유닛별 Sales Process</text>
+      <circle cx="160" cy="60" r="12" fill="#1C1E21"/>
+      <text x="160" y="64" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">1</text>
+      <rect x="352" y="60" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="352" y="60" width="160" height="56" rx="6" fill="rgba(107,112,117,0.10)" stroke="#8E9398" stroke-width="1"/>
+      <text class="nm" x="432" y="86" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">견적</text>
+      <text class="sb" x="432" y="105" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">자동화는 설계 단계</text>
+      <circle cx="352" cy="60" r="12" fill="#1C1E21"/>
+      <text x="352" y="64" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">2</text>
+      <rect x="544" y="156" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="544" y="156" width="160" height="56" rx="6" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text class="nm" x="624" y="182" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">전자서명</text>
+      <text class="sb" x="624" y="201" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">외부 서비스</text>
+      <rect x="544" y="252" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="544" y="252" width="160" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text class="nm" x="624" y="278" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">계약</text>
+      <text class="sb" x="624" y="297" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">서명 완료 시 상태 전환</text>
+      <circle cx="544" cy="252" r="12" fill="#1C1E21"/>
+      <text x="544" y="256" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">3</text>
+      <rect x="736" y="156" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="736" y="156" width="160" height="56" rx="6" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text class="nm" x="816" y="182" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">고객사 ERP</text>
+      <text class="sb" x="816" y="201" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">서비스·매출 정본</text>
+      <rect x="736" y="252" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="736" y="252" width="160" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text class="nm" x="816" y="278" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">서비스·매출</text>
+      <text class="sb" x="816" y="297" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">계약 라인·Asset·롤업</text>
+      <circle cx="736" cy="252" r="12" fill="#1C1E21"/>
+      <text x="736" y="256" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">4</text>
+      <rect x="736" y="348" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="736" y="348" width="160" height="56" rx="6" fill="rgba(107,112,117,0.10)" stroke="#8E9398" stroke-width="1"/>
+      <text class="nm" x="816" y="374" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">고객 문의</text>
+      <text class="sb" x="816" y="393" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">전화·채팅·메일</text>
+      <rect x="928" y="252" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="928" y="252" width="160" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text class="nm" x="1008" y="278" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">AI 1차 응대</text>
+      <text class="sb" x="1008" y="297" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">AI Service Agent</text>
+      <circle cx="928" cy="252" r="12" fill="#1C1E21"/>
+      <text x="928" y="256" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">5</text>
+      <rect x="928" y="348" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="928" y="348" width="160" height="56" rx="6" fill="rgba(107,112,117,0.10)" stroke="#8E9398" stroke-width="1"/>
+      <text class="nm" x="1008" y="374" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">상담원 응대</text>
+      <text class="sb" x="1008" y="393" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Case 처리</text>
+      <circle cx="928" cy="348" r="12" fill="#1C1E21"/>
+      <text x="928" y="352" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">6</text>
+      <rect x="1120" y="252" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="1120" y="252" width="160" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text class="nm" x="1200" y="278" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">AI 분류 추천</text>
+      <text class="sb" x="1200" y="297" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">상담원이 골라 확정</text>
+      <circle cx="1120" cy="252" r="12" fill="#1C1E21"/>
+      <text x="1120" y="256" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">7</text>
+      <rect x="1120" y="60" width="160" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="1120" y="60" width="160" height="56" rx="6" fill="rgba(107,112,117,0.10)" stroke="#8E9398" stroke-width="1"/>
+      <text class="nm" x="1200" y="86" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Slack Swarming</text>
+      <text class="sb" x="1200" y="105" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">상담·영업 공동 처리</text>
+      <circle cx="1120" cy="60" r="12" fill="#1C1E21"/>
+      <text x="1120" y="64" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">8</text>
+      <line x1="40" y1="452" x2="1296" y2="452" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="40" y="472" width="20" height="12" rx="2" fill="rgba(107,112,117,0.10)" stroke="#8E9398" stroke-width="1"/>
+      <text x="68" y="482" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">사람이 하는 단계</text>
+      <rect x="196" y="472" width="20" height="12" rx="2" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="224" y="482" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Salesforce가 기록·자동 처리</text>
+      <rect x="412" y="472" width="20" height="12" rx="2" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text x="440" y="482" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">외부 시스템</text>
+      <circle cx="560" cy="478" r="8" fill="#1C1E21"/>
+      <text x="560" y="482" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">1</text>
+      <text x="576" y="482" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">읽는 순서</text>
+      <line x1="664" y1="478" x2="696" y2="478" stroke="#C63D2F" stroke-width="1.6" marker-end="url(#b2b-arrow-accent)"/>
+      <text x="708" y="482" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">빨간 화살표 = 판단 지점 (ERP가 정본, CRM은 받는 쪽)</text>
+    </svg>
