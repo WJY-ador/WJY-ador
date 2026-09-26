@@ -39,7 +39,27 @@
 **Development & Automation**<br/>
 <img src="https://img.shields.io/badge/Apex-1798C1?style=flat-square&logo=salesforce&logoColor=white" alt="Apex"/> <img src="https://img.shields.io/badge/LWC-FF6B35?style=flat-square&logoColor=white" alt="LWC"/> <img src="https://img.shields.io/badge/Flow-4CAF50?style=flat-square&logo=salesforce&logoColor=white" alt="Flow"/> <img src="https://img.shields.io/badge/SOQL-2E7D32?style=flat-square&logoColor=white" alt="SOQL"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/> <img src="https://img.shields.io/badge/Salesforce_CLI-00A1E0?style=flat-square&logo=salesforce&logoColor=white" alt="Salesforce CLI"/>
 
-## Featured Projects
+## Projects
+
+Client work at Newbrick. Client names and source code stay private; each link is a write-up of the business problem and design decisions.
+
+| Project | Period | What it is | Stack |
+|:--|:--|:--|:--|
+| [B2B Subscription Commerce CRM](projects/b2b-subscription-commerce/) | 2026.04 - present | Solo end-to-end build: multi-unit sales pipelines, contract hub, service channels. CRM kept as the working layer while the client's ERP stays the source of truth. | Sales Cloud, Service Cloud |
+| [Graduate School Academic Admin CRM](projects/graduate-school-academic-admin/) | 2025.12 - 2026.02 | Admissions modeled as a sales pipeline, catalog separated from per-student records, grades synced in from the school's academic system as the source of truth. | Sales Cloud, Flow, Apex |
+
+## Demos
+
+Pre-sales and standard demos built at Newbrick with the Salesforce and internal teams. My part: org build and design decisions.
+
+| Demo | Period | What it shows | Stack |
+|:--|:--|:--|:--|
+| [Commerce Seller Sales AI](demos/commerce-seller-sales/) | 2026.08 - 09 | Eight-scene seller sales flow: dashboard Q&A, seller 360 with field-level governance, AI search across Slack and CRM records. | Tableau Next, Agentforce, Slack, Data Cloud, MCE |
+| [Fashion Marketplace Service](demos/fashion-marketplace-service/) | 2026.03 - 05 | One customer journey across four scenarios: first-contact resolution, Slack swarming, seller portal, fully automated Agentforce reply. | Service Cloud, Experience Cloud, Agentforce, Slack |
+| [Medical Rental Agentforce](demos/medical-rental-agentforce/) | 2026.04 | Agent that answers general questions before sign-in and personal account questions only after verification, with no forced login. | Agentforce, Data Cloud, Knowledge |
+| [Medical Device Consignment](demos/medical-device-consignment/) | 2026.03 | Consigned stock tracking from shipment to usage to return, with a product 360 view and PDF statements. | Sales Cloud, LWC, Apex |
+
+## Side Projects
 
 | Project | What it is | Stack |
 |:--|:--|:--|
