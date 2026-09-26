@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1056 604" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-flow-title system-flow-desc">
+<svg viewBox="0 0 1056 652" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-flow-title system-flow-desc">
       <title id="system-flow-title">B2B 구독 커머스 CRM 시스템 흐름</title>
-      <desc id="system-flow-desc">고객사 ERP를 매출 정본으로 두고 Salesforce를 작업 레이어로 둔 구조로, 영업은 Opportunity에서 계약 허브와 계약 라인·Asset을 거쳐 청구·매출 롤업으로, 상담은 채널에서 Case와 AI 분류 추천으로 이어지고, Case와 Opportunity 모두 Slack Swarming으로 관련자를 모으며 전자서명 서비스가 계약 상태를 바꾼다.</desc>
+      <desc id="system-flow-desc">고객사 ERP를 매출 정본으로 두고 Salesforce를 작업 레이어로 둔 구조로, 영업은 Opportunity에서 계약 허브와 계약 라인·Asset을 거쳐 청구·매출 롤업으로, 상담은 채널에서 Case와 AI 분류 추천으로 이어지며 웹챗은 AI Service Agent가 Knowledge로 1차 응대한 뒤 상담원 이관 시 Case로, AI 단독 종결 시 Case 검수로 가고, Case와 Opportunity 모두 Slack Swarming으로 관련자를 모으며 전자서명 서비스가 계약 상태를 바꾼다.</desc>
       <defs>
         <style>@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');</style>
         <marker id="sf-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6B7075"/></marker>
@@ -13,15 +13,15 @@
       <rect width="100%" height="100%" fill="#FAFAF7"/>
 
       <!-- ── zones ── -->
-      <rect x="40" y="40" width="184" height="496" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="40" y="40" width="184" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
       <rect x="52" y="44" width="72" height="16" rx="2" fill="#FAFAF7"/>
       <text x="56" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 시스템</text>
 
-      <rect x="272" y="40" width="552" height="496" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="272" y="40" width="552" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
       <rect x="284" y="44" width="184" height="16" rx="2" fill="#FAFAF7"/>
       <text x="288" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">SALESFORCE · 작업 레이어</text>
 
-      <rect x="840" y="40" width="176" height="496" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="840" y="40" width="176" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
       <rect x="852" y="44" width="36" height="16" rx="2" fill="#FAFAF7"/>
       <text x="856" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">협업</text>
 
@@ -30,7 +30,7 @@
       <text x="288" y="404" fill="#8E9398" font-size="12" font-weight="500" letter-spacing="0.14em" font-family="'IBM Plex Mono', ui-monospace, monospace">SERVICE CLOUD</text>
 
       <!-- ── 정본 경계 (판단 지점) ── -->
-      <line x1="248" y1="40" x2="248" y2="536" stroke="#C63D2F" stroke-width="1.2" stroke-dasharray="4,4"/>
+      <line x1="248" y1="40" x2="248" y2="584" stroke="#C63D2F" stroke-width="1.2" stroke-dasharray="4,4"/>
       <rect x="212" y="188" width="72" height="20" rx="2" fill="#FAFAF7"/>
       <text x="248" y="203" fill="#C63D2F" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">정본 경계</text>
 
@@ -56,8 +56,21 @@
       <line x1="208" y1="444" x2="288" y2="444" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
       <line x1="440" y1="444" x2="472" y2="444" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
 
+      <!-- 상담 채널(웹챗) → AI Service Agent -->
+      <path d="M 176,472 V 532 Q 176,540 184,540 H 288" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
+      <rect x="136" y="492" width="32" height="16" rx="2" fill="#FAFAF7"/>
+      <text x="152" y="504" fill="#3D5A66" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">웹챗</text>
+
+      <!-- AI Service Agent → Case (상담원 이관) -->
+      <line x1="316" y1="512" x2="316" y2="472" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <rect x="324" y="484" width="68" height="16" rx="2" fill="#FAFAF7"/>
+      <text x="328" y="496" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담원 이관</text>
+
+      <!-- AI Service Agent → Case 검수 (AI 단독 종결) -->
+      <line x1="440" y1="540" x2="472" y2="540" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
       <!-- Case → Slack Swarming -->
-      <path d="M 364,472 V 488 Q 364,496 372,496 H 920 Q 928,496 928,488 V 472" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
+      <path d="M 412,472 V 488 Q 412,496 420,496 H 920 Q 928,496 928,488 V 472" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
 
       <!-- Opportunity → Slack Swarming (Asset→롤업 수직선을 hop으로 넘는다) -->
       <path d="M 364,208 V 232 Q 364,240 372,240 H 724 a 8,8 0 0,1 16,0 H 920 Q 928,240 928,248 V 416" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
@@ -117,6 +130,18 @@
       <text x="548" y="442" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">AI 분류 추천</text>
       <text x="548" y="460" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담원이 골라 확정</text>
 
+      <!-- AI Service Agent (웹챗 앞단) -->
+      <rect x="288" y="512" width="152" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="288" y="512" width="152" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="364" y="538" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">AI Service Agent</text>
+      <text x="364" y="556" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Knowledge 기반 1차 응대</text>
+
+      <!-- Case 검수 -->
+      <rect x="472" y="512" width="152" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="472" y="512" width="152" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="548" y="538" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Case 검수</text>
+      <text x="548" y="556" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">AI 단독 종결 건</text>
+
       <!-- Slack Swarming (external) -->
       <rect x="852" y="416" width="152" height="56" rx="6" fill="#FAFAF7"/>
       <rect x="852" y="416" width="152" height="56" rx="6" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
@@ -124,15 +149,15 @@
       <text x="928" y="460" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담·영업 협업</text>
 
       <!-- ── legend strip ── -->
-      <line x1="40" y1="556" x2="1016" y2="556" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
-      <rect x="40" y="572" width="20" height="12" rx="2" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
-      <text x="68" y="582" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 시스템</text>
-      <rect x="176" y="572" width="20" height="12" rx="2" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
-      <text x="204" y="582" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Salesforce 구성</text>
-      <rect x="336" y="572" width="20" height="12" rx="2" fill="rgba(28,30,33,0.05)" stroke="#6B7075" stroke-width="1"/>
-      <text x="364" y="582" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">집계</text>
-      <line x1="432" y1="578" x2="460" y2="578" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
-      <text x="472" y="582" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 연동</text>
-      <line x1="568" y1="578" x2="596" y2="578" stroke="#C63D2F" stroke-width="1.2" stroke-dasharray="4,4"/>
-      <text x="608" y="582" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">빨간 점선 = 판단 지점 (ERP 정본 · CRM 작업 레이어)</text>
+      <line x1="40" y1="604" x2="1016" y2="604" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="40" y="620" width="20" height="12" rx="2" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text x="68" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 시스템</text>
+      <rect x="176" y="620" width="20" height="12" rx="2" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="204" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Salesforce 구성</text>
+      <rect x="336" y="620" width="20" height="12" rx="2" fill="rgba(28,30,33,0.05)" stroke="#6B7075" stroke-width="1"/>
+      <text x="364" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">집계</text>
+      <line x1="432" y1="626" x2="460" y2="626" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
+      <text x="472" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 연동</text>
+      <line x1="568" y1="626" x2="596" y2="626" stroke="#C63D2F" stroke-width="1.2" stroke-dasharray="4,4"/>
+      <text x="608" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">빨간 점선 = 판단 지점 (ERP 정본 · CRM 작업 레이어)</text>
     </svg>
