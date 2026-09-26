@@ -46,7 +46,7 @@ Client work at Newbrick. Client names and source code stay private; each link is
 | Project | Period | What it is | Stack |
 |:--|:--|:--|:--|
 | [B2B Subscription Commerce CRM](projects/b2b-subscription-commerce/) | 2026.04 - present | Solo end-to-end build: multi-unit sales pipelines, contract hub, service channels with an AI Service Agent on web chat. CRM kept as the working layer while the client's ERP stays the source of truth. | Sales Cloud, Service Cloud, Agentforce, Data Cloud |
-| [Graduate School Academic Admin CRM](projects/graduate-school-academic-admin/) | 2025.12 - 2026.02 | Admissions modeled as a sales pipeline, catalog separated from per-student records, grades synced in from the school's academic system as the source of truth. | Sales Cloud, Flow, Apex |
+| [Graduate School Academic Admin CRM](projects/graduate-school-academic-admin/) | 2025.12 - 2026.02 | Admissions run as an Opportunity pipeline with Flow automation; the school's academic system stays the system of record. | Sales Cloud, Flow, Apex |
 
 ## Demos
 
@@ -54,10 +54,10 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 | Demo | Period | What it shows | Stack |
 |:--|:--|:--|:--|
-| [Commerce Seller Sales AI](demos/commerce-seller-sales/) | 2026.08 - 09 | Eight-scene seller sales flow: dashboard Q&A, seller 360 with field-level governance, AI search across Slack and CRM records. | Tableau Next, Agentforce, Slack, Data Cloud, MCE |
-| [Fashion Marketplace Service](demos/fashion-marketplace-service/) | 2026.03 - 05 | One customer journey across four scenarios: first-contact resolution, Slack swarming, seller portal, fully automated Agentforce reply. | Service Cloud, Experience Cloud, Agentforce, Slack |
-| [Medical Rental Agentforce](demos/medical-rental-agentforce/) | 2026.04 | Agent that answers general questions before sign-in and personal account questions only after verification, with no forced login. | Agentforce, Data Cloud, Knowledge |
-| [Medical Device Consignment](demos/medical-device-consignment/) | 2026.03 | Consigned stock tracking from shipment to usage to return, with a product 360 view and PDF statements. | Sales Cloud, LWC, Apex |
+| [Commerce Seller Sales AI](demos/commerce-seller-sales/) | 2026.08 - 09 | Eight-scene seller sales flow across four roles, with Slack + CRM co-citation as the single differentiator. | Tableau Next, Agentforce, Slack, Data Cloud, MCE |
+| [Fashion Marketplace Service](demos/fashion-marketplace-service/) | 2026.03 - 05 | One customer across four scenes: agent first-contact resolution, Slack Swarming, a seller-MD portal, and an AI Service Agent that resolves only when policy backs it. | Service Cloud, Experience Cloud, Agentforce, Slack |
+| [Medical Rental AI Service Agent](demos/medical-rental-agentforce/) | 2026.04 | AI Service Agent answers general questions freely and verifies identity only when personal data is needed. | Agentforce, Knowledge, Service Cloud |
+| [Medical Device Consignment](demos/medical-device-consignment/) | 2026.03 | Consignment flow tracking issue, use, return and remaining quantities on one record, through to the statement PDF. | Sales Cloud, LWC, Apex |
 
 ## Side Projects
 

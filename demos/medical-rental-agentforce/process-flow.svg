@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1056 524" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="process-flow-rental-title process-flow-rental-desc">
+      <title id="process-flow-rental-title">의료기기 렌탈 고객 상담 AI Service Agent 데모 프로세스 흐름</title>
+      <desc id="process-flow-rental-desc">고객 문의를 AI Service Agent가 받아 일반 질문이면 인증 없이 Knowledge로 답하고, 개인 정보가 필요한 질문이면 이름과 생년월일을 받아 등록된 연락처로 보낸 인증번호로 본인을 확인한 뒤 계약·기기·사용 정보를 답하며, 해결하지 못한 문의는 Case를 만들어 상담원에게 넘기는 흐름.</desc>
+      <defs>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');</style>
+        <marker id="sf-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6B7075"/></marker>
+        <marker id="sf-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C63D2F"/></marker>
+        <marker id="sf-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#3D5A66"/></marker>
+      </defs>
+      <rect width="100%" height="100%" fill="#FAFAF7"/>
+
+      <line x1="40" y1="40" x2="1016" y2="40" stroke="rgba(28,30,33,0.22)" stroke-width="1"/>
+      <line x1="40" y1="144" x2="1016" y2="144" stroke="rgba(28,30,33,0.12)" stroke-width="1"/>
+      <line x1="40" y1="360" x2="1016" y2="360" stroke="rgba(28,30,33,0.12)" stroke-width="1"/>
+      <line x1="40" y1="464" x2="1016" y2="464" stroke="rgba(28,30,33,0.22)" stroke-width="1"/>
+      <line x1="136" y1="40" x2="136" y2="464" stroke="rgba(28,30,33,0.22)" stroke-width="1"/>
+      <text x="52" y="96" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">고객</text>
+      <text x="52" y="248" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">AI Service</text>
+      <text x="52" y="264" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Agent</text>
+      <text x="52" y="416" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담원</text>
+
+      <path d="M 304,92 H 400 Q 408,92 408,100 V 148" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 408,244 V 288" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <rect x="416" y="256" width="64" height="16" rx="2" fill="#FAFAF7"/><text x="420" y="268" fill="#6B7075" font-size="12" text-anchor="start" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">일반 질문</text>
+
+      <path d="M 496,196 H 564 Q 572,196 572,188 V 120" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <rect x="500" y="172" width="64" height="16" rx="2" fill="#FAFAF7"/><text x="532" y="184" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">개인 질문</text>
+
+      <path d="M 648,92 H 744 Q 752,92 752,100 V 168" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 820,196 H 856" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 924,224 V 384" fill="none" stroke="#6B7075" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 408,344 V 404 Q 408,412 416,412 H 856" fill="none" stroke="#6B7075" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#sf-arrow)"/>
+
+      <rect x="596" y="388" width="88" height="16" rx="2" fill="#FAFAF7"/><text x="640" y="400" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">해결 못 하면</text>
+
+      <rect x="168" y="64" width="136" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="168" y="64" width="136" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="236" y="90" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">고객 문의</text>
+      <text x="236" y="110" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">웹 채팅</text>
+      <circle cx="168" cy="64" r="10" fill="#1C1E21"/><text x="168" y="68" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">1</text>
+
+      <polygon points="408,148 496,196 408,244 320,196" fill="#FAFAF7"/>
+      <polygon points="408,148 496,196 408,244 320,196" fill="rgba(198,61,47,0.07)" stroke="#C63D2F" stroke-width="1.2"/>
+      <text x="408" y="198" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">개인 정보 필요?</text>
+      <text x="408" y="218" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">질문 판별</text>
+      <circle cx="348" cy="164" r="10" fill="#1C1E21"/><text x="348" y="168" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">2</text>
+
+      <rect x="340" y="288" width="136" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="340" y="288" width="136" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="408" y="314" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Knowledge 답변</text>
+      <text x="408" y="334" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">인증 없이 바로</text>
+      <circle cx="340" cy="288" r="10" fill="#1C1E21"/><text x="340" y="292" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">3</text>
+
+      <rect x="512" y="64" width="136" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="512" y="64" width="136" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="580" y="90" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">이름 · 생년월일</text>
+      <text x="580" y="110" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">고객이 입력</text>
+      <circle cx="512" cy="64" r="10" fill="#1C1E21"/><text x="512" y="68" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">3</text>
+
+      <rect x="684" y="168" width="136" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="684" y="168" width="136" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="752" y="194" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">인증번호 확인</text>
+      <text x="752" y="214" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">등록된 연락처로 발송</text>
+      <circle cx="684" cy="168" r="10" fill="#1C1E21"/><text x="684" y="172" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">4</text>
+
+      <rect x="856" y="168" width="136" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="856" y="168" width="136" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="924" y="194" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">계약 · 기기 · 사용</text>
+      <text x="924" y="214" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">본인 확인 후 답변</text>
+      <circle cx="856" cy="168" r="10" fill="#1C1E21"/><text x="856" y="172" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">5</text>
+
+      <rect x="856" y="384" width="136" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="856" y="384" width="136" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="924" y="410" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담원 연결</text>
+      <text x="924" y="430" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Case 생성 후 이관</text>
+      <circle cx="856" cy="384" r="10" fill="#1C1E21"/><text x="856" y="388" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">6</text>
+
+      <line x1="40" y1="484" x2="1016" y2="484" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <polygon points="50,498 60,506 50,514 40,506" fill="rgba(198,61,47,0.07)" stroke="#C63D2F" stroke-width="1.2"/>
+      <text x="68" y="510" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">판단 지점: 개인 정보가 필요한 질문에서만 인증</text>
+      <line x1="440" y1="506" x2="468" y2="506" stroke="#6B7075" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#sf-arrow)"/>
+      <text x="480" y="510" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">AI Service Agent가 해결하지 못한 문의만</text>
+    </svg>

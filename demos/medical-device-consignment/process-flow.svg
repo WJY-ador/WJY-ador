@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1056 412" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="process-flow-consignment-title process-flow-consignment-desc">
+      <title id="process-flow-consignment-title">의료기기 유통 위탁 재고·사용 내역 관리 데모 프로세스 흐름</title>
+      <desc id="process-flow-consignment-desc">영업기회의 수주 품목으로 병원에 위탁 출고하고, 병원이 수술에 쓴 뒤 공급사 담당자가 사용 내역을 입력하면 출고·사용·회수·잔여 네 수량이 품목 한 레코드에 모이고, 그 레코드를 읽은 위탁 명세서가 사용분 정산의 근거가 되는 흐름.</desc>
+      <defs>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');</style>
+        <marker id="sf-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6B7075"/></marker>
+        <marker id="sf-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C63D2F"/></marker>
+        <marker id="sf-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#3D5A66"/></marker>
+      </defs>
+      <rect width="100%" height="100%" fill="#FAFAF7"/>
+
+      <line x1="40" y1="40" x2="1016" y2="40" stroke="rgba(28,30,33,0.22)" stroke-width="1"/>
+      <line x1="40" y1="144" x2="1016" y2="144" stroke="rgba(28,30,33,0.12)" stroke-width="1"/>
+      <line x1="40" y1="248" x2="1016" y2="248" stroke="rgba(28,30,33,0.12)" stroke-width="1"/>
+      <line x1="40" y1="352" x2="1016" y2="352" stroke="rgba(28,30,33,0.22)" stroke-width="1"/>
+      <line x1="136" y1="40" x2="136" y2="352" stroke="rgba(28,30,33,0.22)" stroke-width="1"/>
+      <text x="52" y="96" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">병원</text>
+      <text x="52" y="200" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">공급사 담당자</text>
+      <text x="52" y="304" fill="#6B7075" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Salesforce</text>
+
+      <path d="M 220,272 V 204 Q 220,196 228,196 H 304" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 280,300 H 304" fill="none" stroke="#6B7075" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 364,168 V 100 Q 364,92 372,92 H 448" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 568,92 H 644 Q 652,92 652,100 V 168" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 652,224 V 272" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 696,300 H 736" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <path d="M 856,300 H 932 Q 940,300 940,292 V 224" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+
+      <rect x="160" y="272" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="160" y="272" width="120" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="220" y="298" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">영업기회 수주</text>
+      <text x="220" y="318" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">수주 품목 · 수량</text>
+      <circle cx="160" cy="272" r="10" fill="#1C1E21"/><text x="160" y="276" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">1</text>
+
+      <rect x="304" y="272" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="304" y="272" width="120" height="56" rx="6" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text x="364" y="298" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">제품 360</text>
+      <text x="364" y="318" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">영업기회 · 재고</text>
+
+      <rect x="304" y="168" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="304" y="168" width="120" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="364" y="194" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">위탁 출고</text>
+      <text x="364" y="214" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">병원으로 출고</text>
+      <circle cx="304" cy="168" r="10" fill="#1C1E21"/><text x="304" y="172" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">2</text>
+
+      <rect x="448" y="64" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="448" y="64" width="120" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="508" y="90" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">수술에 사용</text>
+      <text x="508" y="110" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">남은 기기는 회수</text>
+      <circle cx="448" cy="64" r="10" fill="#1C1E21"/><text x="448" y="68" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">3</text>
+
+      <rect x="592" y="168" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="592" y="168" width="120" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="652" y="194" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">사용 내역 입력</text>
+      <text x="652" y="214" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">라인 편집 화면</text>
+      <circle cx="592" cy="168" r="10" fill="#1C1E21"/><text x="592" y="172" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">4</text>
+
+      <rect x="448" y="272" width="248" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="448" y="272" width="248" height="56" rx="6" fill="rgba(198,61,47,0.07)" stroke="#C63D2F" stroke-width="1.2"/>
+      <text x="572" y="298" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">한 레코드에 네 수량</text>
+      <text x="572" y="318" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">출고 · 사용 · 회수 · 잔여</text>
+
+      <rect x="736" y="272" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="736" y="272" width="120" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="796" y="298" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">위탁 명세서</text>
+      <text x="796" y="318" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">PDF 출력</text>
+      <circle cx="736" cy="272" r="10" fill="#1C1E21"/><text x="736" y="276" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">5</text>
+
+      <rect x="880" y="168" width="120" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="880" y="168" width="120" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="940" y="194" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">사용분 정산</text>
+      <text x="940" y="214" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">명세서가 근거</text>
+      <circle cx="880" cy="168" r="10" fill="#1C1E21"/><text x="880" y="172" fill="#FFFFFF" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">6</text>
+
+      <line x1="40" y1="372" x2="1016" y2="372" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="40" y="388" width="20" height="12" rx="2" fill="rgba(198,61,47,0.07)" stroke="#C63D2F" stroke-width="1.2"/>
+      <text x="68" y="398" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">판단 지점: 품목 한 줄에서 잔여 = 출고 − 사용 − 회수</text>
+      <rect x="480" y="388" width="20" height="12" rx="2" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text x="508" y="398" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">조회 화면</text>
+      <line x1="624" y1="394" x2="652" y2="394" stroke="#6B7075" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#sf-arrow)"/>
+      <text x="664" y="398" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">제품 기준 조회</text>
+    </svg>

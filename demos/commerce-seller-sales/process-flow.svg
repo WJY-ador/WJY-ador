@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1040 808" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="commerce-process-flow-title commerce-process-flow-desc">
+      <title id="commerce-process-flow-title">커머스 플랫폼 셀러 영업 데모 프로세스 흐름</title>
+      <desc id="commerce-process-flow-desc">영업 리더가 대시보드에 질문해 현황을 보고, 영업 기획이 프로모션 대상 셀러의 영업기회를 일괄 생성하면, 영업 담당이 파이프라인과 셀러 360을 보고, 영업 기획이 AI에 질문해 Slack 대화와 CRM 레코드를 함께 인용받고, 마케팅이 세그먼트로 셀러에게 자동 연락하며, 영업 담당이 파생 영업기회를 잡고, 영업 리더가 성과를 drill-down으로 확인하는 여덟 장면의 흐름.</desc>
+      <defs>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');</style>
+        <marker id="sf-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6B7075"/></marker>
+        <marker id="sf-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C63D2F"/></marker>
+        <marker id="sf-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#3D5A66"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#FAFAF7"/>
+      <rect x="40" y="40" width="960" height="696" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="40" y1="80" x2="1000" y2="80" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="280" y1="40" x2="280" y2="736" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="520" y1="40" x2="520" y2="736" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="760" y1="40" x2="760" y2="736" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <text x="160" y="66" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">영업 리더</text>
+      <text x="400" y="66" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">영업 기획</text>
+      <text x="640" y="66" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">영업 담당</text>
+      <text x="880" y="66" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">마케팅</text>
+      <path d="M 264,124 H 392 Q 400,124 400,132 V 176" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <path d="M 504,204 H 632 Q 640,204 640,212 V 256" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <path d="M 640,312 V 336" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <path d="M 536,364 H 408 Q 400,364 400,372 V 416" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <path d="M 504,444 H 872 Q 880,444 880,452 V 496" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <path d="M 776,524 H 648 Q 640,524 640,532 V 576" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <path d="M 536,604 H 168 Q 160,604 160,612 V 656" fill="none" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <rect x="56" y="96" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="56" y="96" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="160" y="122" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">현황 질의</text>
+      <text x="160" y="141" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">대시보드에 자연어로 질문</text>
+      <circle cx="56" cy="96" r="12" fill="#1C1E21"/>
+      <text x="56" y="100" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">1</text>
+      <rect x="296" y="176" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="296" y="176" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="400" y="202" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">프로모션 생성</text>
+      <text x="400" y="221" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">대상 셀러 영업기회 일괄 생성</text>
+      <rect x="460" y="182" width="36" height="16" rx="2" fill="#FAFAF7" stroke="rgba(28,30,33,0.22)" stroke-width="0.8"/>
+      <text x="478" y="194" fill="#1C1E21" font-size="12" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">자동</text>
+      <circle cx="296" cy="176" r="12" fill="#1C1E21"/>
+      <text x="296" y="180" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">2</text>
+      <rect x="536" y="256" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="536" y="256" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="640" y="282" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">파이프라인 관리</text>
+      <text x="640" y="301" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">점수순으로 우선순위</text>
+      <circle cx="536" cy="256" r="12" fill="#1C1E21"/>
+      <text x="536" y="260" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">3</text>
+      <rect x="536" y="336" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="536" y="336" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="640" y="362" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">셀러 360</text>
+      <text x="640" y="381" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">관계 정보 · 다음 행동 추천</text>
+      <circle cx="536" cy="336" r="12" fill="#1C1E21"/>
+      <text x="536" y="340" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">4</text>
+      <rect x="296" y="416" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="296" y="416" width="208" height="56" rx="6" fill="rgba(198,61,47,0.07)" stroke="#C63D2F" stroke-width="1.2"/>
+      <text x="400" y="442" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">AI 질의</text>
+      <text x="400" y="461" fill="#C63D2F" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">Slack 대화 + CRM 레코드 동시 인용</text>
+      <circle cx="296" cy="416" r="12" fill="#C63D2F"/>
+      <text x="296" y="420" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">5</text>
+      <rect x="776" y="496" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="776" y="496" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="880" y="522" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">마케팅 자동화</text>
+      <text x="880" y="541" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">세그먼트로 셀러에게 자동 연락</text>
+      <rect x="940" y="502" width="36" height="16" rx="2" fill="#FAFAF7" stroke="rgba(28,30,33,0.22)" stroke-width="0.8"/>
+      <text x="958" y="514" fill="#1C1E21" font-size="12" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">자동</text>
+      <circle cx="776" cy="496" r="12" fill="#1C1E21"/>
+      <text x="776" y="500" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">6</text>
+      <rect x="536" y="576" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="536" y="576" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="640" y="602" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">파생 영업기회</text>
+      <text x="640" y="621" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">캠페인에서 새 기회 생성</text>
+      <circle cx="536" cy="576" r="12" fill="#1C1E21"/>
+      <text x="536" y="580" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">7</text>
+      <rect x="56" y="656" width="208" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="56" y="656" width="208" height="56" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="160" y="682" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">성과 확인</text>
+      <text x="160" y="701" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">대시보드 drill-down</text>
+      <circle cx="56" cy="656" r="12" fill="#1C1E21"/>
+      <text x="56" y="660" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">8</text>
+      <line x1="40" y1="756" x2="1000" y2="756" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <circle cx="48" cy="782" r="8" fill="#1C1E21"/>
+      <text x="48" y="786" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">1</text>
+      <text x="64" y="786" fill="#6B7075" font-size="12" text-anchor="start" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">장면 순서</text>
+      <rect x="152" y="774" width="36" height="16" rx="2" fill="#FAFAF7" stroke="rgba(28,30,33,0.22)" stroke-width="0.8"/>
+      <text x="170" y="786" fill="#1C1E21" font-size="12" font-weight="500" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">자동</text>
+      <text x="196" y="786" fill="#6B7075" font-size="12" text-anchor="start" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">사람이 하던 일을 시스템이 넘겨받는 장면</text>
+      <rect x="480" y="776" width="20" height="12" rx="2" fill="rgba(198,61,47,0.07)" stroke="#C63D2F" stroke-width="1.2"/>
+      <text x="508" y="786" fill="#6B7075" font-size="12" text-anchor="start" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">빨간 박스 = 판단 지점 (차별점을 동시 인용 하나로 좁힘)</text>
+    </svg>
