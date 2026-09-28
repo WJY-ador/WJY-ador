@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/jeongyeon-won-3183a3358/"><img src="https://img.shields.io/badge/LinkedIn-Jeongyeon_Won-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <img src="https://img.shields.io/badge/Salesforce_Certified-6x-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="6x Salesforce Certified"/>
+  <a href="https://www.salesforce.com/trailblazer/q0fgzhjacgpi7844k3"><img src="https://img.shields.io/badge/Salesforce_Certified-6x-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white" alt="6x Salesforce Certified"/></a>
   <img src="https://img.shields.io/badge/Based_in-Seoul,_Korea-555555?style=for-the-badge" alt="Seoul, Korea"/>
 </p>
 
