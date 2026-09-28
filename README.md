@@ -63,6 +63,7 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 | Project | What it is | Stack |
 |:--|:--|:--|
+| [salesforce-newscard](https://github.com/WJY-ador/salesforce-newscard) | Turns Salesforce release and event news into Korean card-news PNGs for Instagram and Slack: brief validation, image-prompt assembly, 4:5 fit by measuring content bounds, logo compositing, idempotent send. | Node.js, puppeteer-core, Python, Slack API, Instagram Graph API |
 | [Personal Review Dashboard](side-projects/personal-dashboard/) | Single-screen board that ingests collected posts and notes, hands tasks to CLI workers outside the server, and writes back only what the user submits. The server is pure stdlib and never calls a model. | Python stdlib, HTML/JS, jsonl queue, claude CLI workers, launchd |
 | [Salesforce-Component](https://github.com/WJY-ador/Salesforce-Component) | Reusable components that deploy to any org using standard fields only. Includes a Sales Dashboard LWC with target-attainment KPIs and SVG sparklines, no extra license needed. | LWC, Apex |
 | [salesforce-side-project](https://github.com/WJY-ador/salesforce-side-project) | Hands-on builds in a Dev Org: Kakao Map integration, custom login LWC, Apex classes, and Experience Cloud architecture notes. | LWC, Apex, Experience Cloud |
