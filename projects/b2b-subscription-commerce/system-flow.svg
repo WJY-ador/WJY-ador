@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 1056 652" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-flow-title system-flow-desc">
+<svg viewBox="0 0 1240 652" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="system-flow-title system-flow-desc">
       <title id="system-flow-title">B2B 구독 커머스 CRM 시스템 흐름</title>
-      <desc id="system-flow-desc">고객사 ERP를 매출 정본으로 두고 Salesforce를 작업 레이어로 둔 구조로, 영업은 Opportunity에서 계약 허브와 계약 라인·Asset을 거쳐 청구·매출 롤업으로, 상담은 채널에서 Case와 AI 분류 추천으로 이어지며 웹챗은 AI Service Agent가 Knowledge로 1차 응대한 뒤 상담원 이관 시 Case로, AI 단독 종결 시 Case 검수로 가고, Case와 Opportunity 모두 Slack Swarming으로 관련자를 모으며 전자서명 서비스가 계약 상태를 바꾼다.</desc>
+      <desc id="system-flow-desc">고객사 ERP를 매출 정본으로 두고 Salesforce를 작업 레이어로 둔 구조로, 영업은 Opportunity에서 견적을 거쳐 계약 허브와 계약 라인·Asset을 거쳐 청구·매출 롤업으로, 상담은 채널에서 Case와 AI 분류 추천으로 이어지며 웹챗은 AI Service Agent가 Knowledge로 1차 응대한 뒤 상담원 이관 시 Case로, AI 단독 종결 시 Case 검수로 가고, Case와 Opportunity 모두 Slack Swarming으로 관련자를 모으며 전자서명 서비스가 계약 상태를 바꾼다.</desc>
       <defs>
         <style>@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&amp;family=IBM+Plex+Sans+KR:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');</style>
         <marker id="sf-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6B7075"/></marker>
@@ -17,17 +17,17 @@
       <rect x="52" y="44" width="72" height="16" rx="2" fill="#FAFAF7"/>
       <text x="56" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 시스템</text>
 
-      <rect x="272" y="40" width="552" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="272" y="40" width="736" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
       <rect x="284" y="44" width="184" height="16" rx="2" fill="#FAFAF7"/>
       <text x="288" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">SALESFORCE · 작업 레이어</text>
 
-      <rect x="840" y="40" width="176" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
-      <rect x="852" y="44" width="36" height="16" rx="2" fill="#FAFAF7"/>
-      <text x="856" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">협업</text>
+      <rect x="1024" y="40" width="176" height="544" rx="8" fill="rgba(28,30,33,0.02)" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <rect x="1036" y="44" width="36" height="16" rx="2" fill="#FAFAF7"/>
+      <text x="1040" y="56" fill="#8E9398" font-size="12" font-weight="500" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">협업</text>
 
       <!-- cloud eyebrows -->
-      <text x="288" y="132" fill="#8E9398" font-size="12" font-weight="500" letter-spacing="0.14em" font-family="'IBM Plex Mono', ui-monospace, monospace">SALES CLOUD</text>
-      <text x="288" y="404" fill="#8E9398" font-size="12" font-weight="500" letter-spacing="0.14em" font-family="'IBM Plex Mono', ui-monospace, monospace">SERVICE CLOUD</text>
+      <text x="288" y="124" fill="#8E9398" font-size="12" font-weight="500" letter-spacing="0.14em" font-family="'IBM Plex Mono', ui-monospace, monospace">SALES CLOUD</text>
+      <text x="288" y="396" fill="#8E9398" font-size="12" font-weight="500" letter-spacing="0.14em" font-family="'IBM Plex Mono', ui-monospace, monospace">SERVICE CLOUD</text>
 
       <!-- ── 정본 경계 (판단 지점) ── -->
       <line x1="248" y1="40" x2="248" y2="584" stroke="#C63D2F" stroke-width="1.2" stroke-dasharray="4,4"/>
@@ -36,19 +36,20 @@
 
       <!-- ── arrows (drawn before nodes) ── -->
       <!-- 전자서명 → 계약 -->
-      <path d="M 208,100 H 540 Q 548,100 548,108 V 144" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
+      <path d="M 208,100 H 724 Q 732,100 732,108 V 144" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
       <rect x="324" y="72" width="136" height="20" rx="2" fill="#FAFAF7"/>
       <text x="392" y="86" fill="#3D5A66" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">서명 완료 시 상태 전환</text>
 
-      <!-- Opportunity → 계약 → 계약 라인·Asset -->
+      <!-- Opportunity → 견적 → 계약 → 계약 라인·Asset -->
       <line x1="440" y1="176" x2="472" y2="176" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
       <line x1="624" y1="176" x2="656" y2="176" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <line x1="808" y1="176" x2="840" y2="176" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
 
       <!-- 계약 라인·Asset → 청구·매출 롤업 -->
-      <line x1="732" y1="208" x2="732" y2="272" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
+      <line x1="916" y1="208" x2="916" y2="272" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
 
       <!-- ERP → 청구·매출 롤업 (정본에서 흘러오는 매출) -->
-      <line x1="208" y1="300" x2="656" y2="300" stroke="#C63D2F" stroke-width="1.2" marker-end="url(#sf-arrow-accent)"/>
+      <line x1="208" y1="300" x2="840" y2="300" stroke="#C63D2F" stroke-width="1.2" marker-end="url(#sf-arrow-accent)"/>
       <rect x="336" y="272" width="112" height="20" rx="2" fill="#FAFAF7"/>
       <text x="392" y="286" fill="#C63D2F" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">매출 데이터 유입</text>
 
@@ -70,10 +71,10 @@
       <line x1="440" y1="540" x2="472" y2="540" stroke="#6B7075" stroke-width="1.2" marker-end="url(#sf-arrow)"/>
 
       <!-- Case → Slack Swarming -->
-      <path d="M 412,472 V 488 Q 412,496 420,496 H 920 Q 928,496 928,488 V 472" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
+      <path d="M 412,472 V 488 Q 412,496 420,496 H 1104 Q 1112,496 1112,488 V 472" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
 
       <!-- Opportunity → Slack Swarming (Asset→롤업 수직선을 hop으로 넘는다) -->
-      <path d="M 364,208 V 232 Q 364,240 372,240 H 724 a 8,8 0 0,1 16,0 H 920 Q 928,240 928,248 V 416" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
+      <path d="M 364,208 V 232 Q 364,240 372,240 H 908 a 8,8 0 0,1 16,0 H 1104 Q 1112,240 1112,248 V 416" fill="none" stroke="#3D5A66" stroke-width="1.2" marker-end="url(#sf-arrow-link)"/>
 
       <!-- ── nodes ── -->
       <!-- 전자서명 서비스 (external) -->
@@ -100,23 +101,29 @@
       <text x="364" y="172" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Opportunity</text>
       <text x="364" y="192" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">유닛별 Sales Process</text>
 
-      <!-- 계약 (허브) -->
+      <!-- 견적 -->
       <rect x="472" y="144" width="152" height="64" rx="6" fill="#FAFAF7"/>
-      <rect x="472" y="144" width="152" height="64" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1.2"/>
-      <text x="548" y="172" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">계약</text>
-      <text x="548" y="192" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">데이터 허브</text>
+      <rect x="472" y="144" width="152" height="64" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="548" y="172" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">견적</text>
+      <text x="548" y="192" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">자동화는 설계 단계</text>
+
+      <!-- 계약 (허브) -->
+      <rect x="656" y="144" width="152" height="64" rx="6" fill="#FAFAF7"/>
+      <rect x="656" y="144" width="152" height="64" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1.2"/>
+      <text x="732" y="172" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">계약</text>
+      <text x="732" y="192" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">데이터 허브</text>
 
       <!-- 계약 라인 · Asset -->
-      <rect x="656" y="144" width="152" height="64" rx="6" fill="#FAFAF7"/>
-      <rect x="656" y="144" width="152" height="64" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
-      <text x="732" y="172" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">계약 라인 · Asset</text>
-      <text x="732" y="192" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">서비스 · 유형자산</text>
+      <rect x="840" y="144" width="152" height="64" rx="6" fill="#FAFAF7"/>
+      <rect x="840" y="144" width="152" height="64" rx="6" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
+      <text x="916" y="172" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">계약 라인 · Asset</text>
+      <text x="916" y="192" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">서비스 · 유형자산</text>
 
       <!-- 청구 · 매출 롤업 (store) -->
-      <rect x="656" y="272" width="152" height="56" rx="6" fill="#FAFAF7"/>
-      <rect x="656" y="272" width="152" height="56" rx="6" fill="rgba(28,30,33,0.05)" stroke="#6B7075" stroke-width="1"/>
-      <text x="732" y="298" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">청구 · 매출 롤업</text>
-      <text x="732" y="316" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">고객별 잔액</text>
+      <rect x="840" y="272" width="152" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="840" y="272" width="152" height="56" rx="6" fill="rgba(28,30,33,0.05)" stroke="#6B7075" stroke-width="1"/>
+      <text x="916" y="298" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">청구 · 매출 롤업</text>
+      <text x="916" y="316" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">고객별 잔액</text>
 
       <!-- Case -->
       <rect x="288" y="416" width="152" height="56" rx="6" fill="#FAFAF7"/>
@@ -143,13 +150,33 @@
       <text x="548" y="556" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">AI 단독 종결 건</text>
 
       <!-- Slack Swarming (external) -->
-      <rect x="852" y="416" width="152" height="56" rx="6" fill="#FAFAF7"/>
-      <rect x="852" y="416" width="152" height="56" rx="6" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
-      <text x="928" y="442" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Slack Swarming</text>
-      <text x="928" y="460" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담·영업 협업</text>
+      <rect x="1036" y="416" width="152" height="56" rx="6" fill="#FAFAF7"/>
+      <rect x="1036" y="416" width="152" height="56" rx="6" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
+      <text x="1112" y="442" fill="#1C1E21" font-size="16" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">Slack Swarming</text>
+      <text x="1112" y="460" fill="#6B7075" font-size="12" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">상담·영업 협업</text>
+
+      <!-- ── 워크스루 번호 뱃지 (README ①~⑧, ④는 계약 라인·Asset과 롤업 두 박스) ── -->
+      <circle cx="288" cy="144" r="12" fill="#1C1E21"/>
+      <text x="288" y="148" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">1</text>
+      <circle cx="472" cy="144" r="12" fill="#1C1E21"/>
+      <text x="472" y="148" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">2</text>
+      <circle cx="656" cy="144" r="12" fill="#1C1E21"/>
+      <text x="656" y="148" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">3</text>
+      <circle cx="840" cy="144" r="12" fill="#1C1E21"/>
+      <text x="840" y="148" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">4</text>
+      <circle cx="840" cy="272" r="12" fill="#1C1E21"/>
+      <text x="840" y="276" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">4</text>
+      <circle cx="288" cy="512" r="12" fill="#1C1E21"/>
+      <text x="288" y="516" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">5</text>
+      <circle cx="288" cy="416" r="12" fill="#1C1E21"/>
+      <text x="288" y="420" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">6</text>
+      <circle cx="472" cy="416" r="12" fill="#1C1E21"/>
+      <text x="472" y="420" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">7</text>
+      <circle cx="1036" cy="416" r="12" fill="#1C1E21"/>
+      <text x="1036" y="420" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">8</text>
 
       <!-- ── legend strip ── -->
-      <line x1="40" y1="604" x2="1016" y2="604" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
+      <line x1="40" y1="604" x2="1200" y2="604" stroke="rgba(28,30,33,0.12)" stroke-width="0.8"/>
       <rect x="40" y="620" width="20" height="12" rx="2" fill="rgba(28,30,33,0.03)" stroke="rgba(28,30,33,0.30)" stroke-width="1"/>
       <text x="68" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 시스템</text>
       <rect x="176" y="620" width="20" height="12" rx="2" fill="#ffffff" stroke="#1C1E21" stroke-width="1"/>
@@ -160,4 +187,7 @@
       <text x="472" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">외부 연동</text>
       <line x1="568" y1="626" x2="596" y2="626" stroke="#C63D2F" stroke-width="1.2" stroke-dasharray="4,4"/>
       <text x="608" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">빨간 점선 = 판단 지점 (ERP 정본 · CRM 작업 레이어)</text>
+      <circle cx="968" cy="626" r="8" fill="#1C1E21"/>
+      <text x="968" y="630" fill="#FAFAF7" font-size="12" font-weight="600" text-anchor="middle" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">1</text>
+      <text x="984" y="630" fill="#6B7075" font-size="12" font-family="'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif">읽는 순서 (워크스루 번호)</text>
     </svg>
