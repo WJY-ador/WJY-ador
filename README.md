@@ -63,6 +63,7 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 | Project | What it is | Stack |
 |:--|:--|:--|
+| [Personal Review Dashboard](side-projects/personal-dashboard/) | Single-screen board that ingests collected posts and notes, hands tasks to CLI workers outside the server, and writes back only what the user submits. The server is pure stdlib and never calls a model. | Python stdlib, HTML/JS, jsonl queue, claude CLI workers, launchd |
 | [Salesforce-Component](https://github.com/WJY-ador/Salesforce-Component) | Reusable components that deploy to any org using standard fields only. Includes a Sales Dashboard LWC with target-attainment KPIs and SVG sparklines, no extra license needed. | LWC, Apex |
 | [salesforce-side-project](https://github.com/WJY-ador/salesforce-side-project) | Hands-on builds in a Dev Org: Kakao Map integration, custom login LWC, Apex classes, and Experience Cloud architecture notes. | LWC, Apex, Experience Cloud |
 | [Salesforce_Yashija_Project](https://github.com/WJY-ador/Salesforce_Yashija_Project) | End-to-end CRM for a hotel B2B business, from sales to construction to after-service: KPI dashboard, partner matching, AI prompt builder, Web-to-Lead, and Service Cloud case automation. Built in the Salesforce Youth CRM 101 program. | Sales Cloud, Service Cloud, Flow, Apex, LWC |
