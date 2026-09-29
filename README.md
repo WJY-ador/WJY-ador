@@ -61,7 +61,7 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 ## Side Projects
 
-**AI tools hub — [consultant-side-lab](https://github.com/WJY-ador/consultant-side-lab)**: four personal AI tools that gather my scattered data into one place (Salesforce release card news, a twice-weekly discourse scan, a judgment dashboard, and local markdown search over MCP).
+**AI tools hub — [consultant-side-lab](https://github.com/WJY-ador/consultant-side-lab)**: five personal AI tools that gather my scattered data into one place (Salesforce release card news, a twice-weekly discourse scan, a judgment dashboard, local markdown search over MCP, and my own chat history kept on my Mac).
 
 ### Salesforce practice builds
 
