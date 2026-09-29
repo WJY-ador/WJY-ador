@@ -61,10 +61,12 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 ## Side Projects
 
+**AI tools hub — [consultant-side-lab](https://github.com/WJY-ador/consultant-side-lab)**: four personal AI tools that gather my scattered data into one place (Salesforce release card news, a twice-weekly discourse scan, a judgment dashboard, and local markdown search over MCP).
+
+### Salesforce practice builds
+
 | Project | What it is | Stack |
 |:--|:--|:--|
-| [salesforce-newscard](https://github.com/WJY-ador/salesforce-newscard) | Collects Salesforce release notes and release updates, finds the matching Setup screen in a reference org, captures it with a red box on the spot to check, and ships it as card news to Slack and Instagram. | Node.js, puppeteer-core, sf CLI, Python, Slack API, Instagram Graph API |
-| [personal-dashboard](https://github.com/WJY-ador/personal-dashboard) | Single-screen board that takes collected posts from collect → triage by interest axis → conversation → canon. A worker rewrites the user's judgment into canon sentences, and the server rejects any sentence whose evidence is not the user's own words or records. Pure stdlib server, never calls a model. | Python stdlib, HTML/JS, jsonl queue, claude CLI workers, launchd |
 | [Salesforce-Component](https://github.com/WJY-ador/Salesforce-Component) | Reusable components that deploy to any org using standard fields only. Includes a Sales Dashboard LWC with target-attainment KPIs and SVG sparklines, no extra license needed. | LWC, Apex |
 | [salesforce-side-project](https://github.com/WJY-ador/salesforce-side-project) | Hands-on builds in a Dev Org: Kakao Map integration, custom login LWC, Apex classes, and Experience Cloud architecture notes. | LWC, Apex, Experience Cloud |
 | [Salesforce_Yashija_Project](https://github.com/WJY-ador/Salesforce_Yashija_Project) | End-to-end CRM for a hotel B2B business, from sales to construction to after-service: KPI dashboard, partner matching, AI prompt builder, Web-to-Lead, and Service Cloud case automation. Built in the Salesforce Youth CRM 101 program. | Sales Cloud, Service Cloud, Flow, Apex, LWC |
