@@ -61,7 +61,7 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 ## Side Projects
 
-### AI tools hub — [consultant-side-lab](https://github.com/WJY-ador/consultant-side-lab)
+### AI tools hub — [developer-lab](https://github.com/WJY-ador/developer-lab)
 
 Five personal AI tools that gather my scattered data into one place. Each link is a write-up; see the hub for why and how they fit together.
 
