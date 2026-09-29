@@ -61,7 +61,17 @@ Pre-sales and standard demos built at Newbrick with the Salesforce and internal 
 
 ## Side Projects
 
-**AI tools hub — [consultant-side-lab](https://github.com/WJY-ador/consultant-side-lab)**: five personal AI tools that gather my scattered data into one place (Salesforce release card news, a twice-weekly discourse scan, a judgment dashboard, local markdown search over MCP, and my own chat history kept on my Mac).
+### AI tools hub — [consultant-side-lab](https://github.com/WJY-ador/consultant-side-lab)
+
+Five personal AI tools that gather my scattered data into one place. Each link is a write-up; see the hub for why and how they fit together.
+
+| Project | What it is | Stack |
+|:--|:--|:--|
+| [salesforce-newscard](https://github.com/WJY-ador/salesforce-newscard) | Salesforce release changes, captured on the matching Setup screen with a red box and sent as card news to Slack and Instagram. | Node.js, puppeteer-core, sf CLI, Python |
+| [trend-scan](https://github.com/WJY-ador/trend-scan) | Twice-weekly scan that turns my open questions into search queries; Python owns scoring and freshness, the model only judges the shortlist. | Python, Claude Code CLI, launchd, Slack |
+| [personal-dashboard](https://github.com/WJY-ador/personal-dashboard) | Single-screen board from collected posts to triage, conversation and my own judgment records; rejects any sentence not backed by my words. | Python stdlib, HTML/JS, launchd |
+| [docsearch-mcp](https://github.com/WJY-ador/docsearch-mcp) | Hybrid BM25 + local bge-m3 search over my markdown notes, exposed as one MCP tool. No paid API. | Python, rank-bm25, bge-m3, MCP |
+| [kakao-analytics](https://github.com/WJY-ador/kakao-analytics) | My own chat history, gathered locally on my Mac for search and stats. Nothing leaves the machine. | Python stdlib, launchd |
 
 ### Salesforce practice builds
 
