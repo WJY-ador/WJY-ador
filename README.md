@@ -41,11 +41,11 @@
 
 ## Projects
 
-Client work at Newbrick. Client names and source code stay private; each link is a write-up of the business problem and design decisions.
+Client work at Newbrick. Client names and source code stay private; each link is a write-up of the business problem, design decisions, and how I worked with AI on it.
 
 | Project | Period | What it is | Stack |
 |:--|:--|:--|:--|
-| [B2B Subscription Commerce CRM](projects/b2b-subscription-commerce/) | 2026.04 - present | Solo end-to-end build: multi-unit sales pipelines, contract hub, service channels with an AI Service Agent on web chat. CRM kept as the working layer while the client's ERP stays the source of truth. | Sales Cloud, Service Cloud, Agentforce, Data Cloud |
+| [B2B Subscription Commerce CRM](projects/b2b-subscription-commerce/) | 2026.04 - present | Solo end-to-end build: multi-unit sales pipelines, contract hub, service channels with an AI Service Agent on web chat. The write-up covers the AI harness behind it: issue-log, rule capsules, skills and 17 hook checks, each grown from a real incident. | Sales Cloud, Service Cloud, Agentforce, Data Cloud |
 | [Graduate School Academic Admin CRM](projects/graduate-school-academic-admin/) | 2025.12 - 2026.02 | Admissions run as an Opportunity pipeline with Flow automation; the school's academic system stays the system of record. | Sales Cloud, Flow, Apex |
 
 ## Demos
