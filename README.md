@@ -73,6 +73,12 @@ Five personal AI tools that gather my scattered data into one place. Each link i
 | [docsearch-mcp](https://github.com/WJY-ador/docsearch-mcp) | Hybrid BM25 + local bge-m3 search over my markdown notes, exposed as one MCP tool. No paid API. | Python, rank-bm25, bge-m3, MCP |
 | [kakao-analytics](https://github.com/WJY-ador/kakao-analytics) | My own chat history, gathered locally on my Mac for search and stats. Nothing leaves the machine. | Python stdlib, launchd |
 
+### Just for me
+
+| Project | What it is | Stack |
+|:--|:--|:--|
+| [recipe-bot](https://github.com/WJY-ador/recipe-bot) | Tell a Slack bot what you feel like eating; it picks a YouTube recipe, scales the ingredients to your headcount and sends a card to KakaoTalk. Chat runs on my Mac's subscription CLI, with a rule-based fallback when the Mac is off. No paid API. | Cloudflare Workers, MCP, Claude Code CLI, Slack, Kakao API |
+
 ### Salesforce practice builds
 
 | Project | What it is | Stack |
