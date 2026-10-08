@@ -77,7 +77,7 @@ Five personal AI tools that gather my scattered data into one place. Each link i
 
 | Project | What it is | Stack |
 |:--|:--|:--|
-| [recipe-bot](https://github.com/WJY-ador/recipe-bot) | Tell a Slack bot what you feel like eating; it picks a YouTube recipe, scales the ingredients to your headcount and sends a card to KakaoTalk. Chat runs on my Mac's subscription CLI, with a rule-based fallback when the Mac is off. No paid API. | Cloudflare Workers, MCP, Claude Code CLI, Slack, Kakao API |
+| [recipe-bot](https://github.com/WJY-ador/recipe-bot) | Tell a Slack bot what you feel like eating; it picks a YouTube recipe, scales the ingredients to your headcount and sends a card to KakaoTalk. Chat runs on my Mac's subscription CLI, with a rule-based fallback when the Mac is off. v2 adds Slack button cards, an app home for one-tap resend, and code checks on every number the model writes. No paid API. | Cloudflare Workers, MCP, Claude Code CLI, Slack, Kakao API |
 
 ### Salesforce practice builds
 
