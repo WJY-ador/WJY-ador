@@ -73,6 +73,12 @@ Five personal AI tools that gather my scattered data into one place. Each link i
 | [docsearch-mcp](https://github.com/WJY-ador/docsearch-mcp) | Hybrid BM25 + local bge-m3 search over my markdown notes, exposed as one MCP tool. No paid API. | Python, rank-bm25, bge-m3, MCP |
 | [kakao-analytics](https://github.com/WJY-ador/kakao-analytics) | My own chat history, gathered locally on my Mac for search and stats. Nothing leaves the machine. | Python stdlib, launchd |
 
+### Live service
+
+| Project | What it is | Stack |
+|:--|:--|:--|
+| [eatsy-pick](https://github.com/WJY-ador/eatsy-pick) | Entry for BC Card's eat.pl AI service challenge, live at [eatsy-pick.vercel.app](https://eatsy-pick.vercel.app). Pick where to eat from real card-payment data instead of ratings and ads: a map of nearby stores with district sales percentiles, a "what to eat today" web chat that re-queries eat.pl by its own business categories, and per-district rankings. No login; saves stay on the device. Built solo with Claude Code sub-agents, one git worktree per topic. | Next.js, React, Kakao Map, Leaflet, Vercel, GA4 |
+
 ### Just for me
 
 | Project | What it is | Stack |
